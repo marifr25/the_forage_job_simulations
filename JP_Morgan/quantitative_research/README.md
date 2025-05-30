@@ -44,3 +44,30 @@
 - Same as task 1
 ### 🛠️ Methodology
 - Create a function `price_gas_contract` as mentioned previously in the objectives section 
+  - The function takes several parameters include:
+    - `nat_gas_data` = dataframe natural gas
+    - `injection_dates` = the date when the natural gas was injected
+    - `withdrawal_dates` = the date when the natural gas was withdrawn
+    - `injection_rate` = the rate at which the gas can be injected
+    - `withdrawal_rate` = the rate at which the gas can be withdrawn
+    - `max_volume` = the maximum volume that can be stored
+    - `storage_cost_per_month` = as the name suggests
+    - `injection_cost` = injection cost per injection rate
+    - `withdrawal_cost` = withdrawal cost per withdrawal rate
+    - `transport_cost` = transport cost per trip
+  - Then convert dates in the data to datetime
+  - Loop through the `injection_dates` and `withdrawal_dates` to:
+    - Check if the dates are within the range of the data
+    - Get prices on the injection and withdrawal dates
+    - Calculate volume of gas injected and withdrawn
+    - Calculate costs
+    - Update total costs and value include transport costs
+    - Calculate the value of the trade
+  - Outside the loop, calculate net value of the contract
+  - At the end, return `net_value`
+- Then call the function with the sample inputs.
+### 📈 Results
+- The `price_gas_contract` function returns `net_value` properly
+- `net_value` interpretation:
+  - Positive value indicates potential net profit.
+  - Negative value indicates that expenses exceed revenues.
