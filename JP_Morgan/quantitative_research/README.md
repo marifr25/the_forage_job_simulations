@@ -86,3 +86,12 @@
 - The data is in tabular format, with each row providing details of the borrower, including their income, total loans outstanding, and a few other metrics
 - There is also a column indicating if the borrower has previously defaulted on a loan.
 ### 🛠️ Methodology
+- Check for missing values
+- Split the data & scale the numeric features
+- In this task i use RandomForestClassifier
+  - Train a RandomForestClassifier
+  - Do testing first before applying it to the function
+  - Then evaluate the model
+- Define the function to estimate the probability of default and calculate the expected loss
+### 📈 Results
+- `expected_loss` function which returns the expected loss score
