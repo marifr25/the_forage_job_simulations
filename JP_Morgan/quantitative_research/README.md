@@ -71,3 +71,18 @@
 - `net_value` interpretation:
   - Positive value indicates potential net profit.
   - Negative value indicates that expenses exceed revenues.
+## 🔬 Task 3
+### 🧠 Task Overview
+- How to choose appropriate independent variables from a data set that will accurately predict the outcome of a chosen dependent variable 
+- The importance of using available data to predict customer trends and actions
+- Build a model using Python that will estimate the probability of default for a borrower
+### 🎯 Objectives
+- Build a model that, given details for any loan, will predict the probability that the borrower will default (also known as PD: the probability of default)
+- Use the provided data to train a function that will estimate the probability of default for a borrower
+- Assuming a recovery rate of 10%, this can be used to give the expected loss on a loan
+- Produce a function that can take in the properties of a loan and output the expected loss.
+- You can explore any technique ranging from a simple regression or a decision tree to something more advanced. You can also use multiple methods and provide a comparative analysis.
+### 📁 Dataset
+- The data is in tabular format, with each row providing details of the borrower, including their income, total loans outstanding, and a few other metrics
+- There is also a column indicating if the borrower has previously defaulted on a loan.
+### 🛠️ Methodology
