@@ -95,3 +95,24 @@
 - Define the function to estimate the probability of default and calculate the expected loss
 ### 📈 Results
 - `expected_loss` function which returns the expected loss score
+## 🔬 Task 4
+### 🧠 Task Overview
+- How to apply statistical formulas to business solutions
+- The importance of breaking down a large dataset using machine learning methods
+- Deploy detailed Python code to strategically bucket customers with various FICO scores in order to narrow in on the probability of default
+### 🎯 Objectives
+- create a rating map that maps the FICO score of the borrowers to a rating where a lower rating signifies a better credit score.
+- This problem could be addressed by splitting it into subproblems, which can be solved incrementally (i.e., through a dynamic programming approach)
+### 📁 Dataset
+Same as task 3
+### 🛠️ Methodology
+- Preprocessing data using describe to find out statistics on the data and then find out what the data info is like
+- Plot the data to see what the data distribution is like.
+- The KMeans algorithm is applied to segment the FICO scores into 10 clusters. Each FICO score is assigned a cluster label (bucket).
+- A function is defined to calculate the log-likelihood of default within each bucket. This function computes the probability of default in each bucket and sums the log-likelihood contributions across all buckets.
+- Initial bucket boundaries are set as evenly spaced values between the minimum and maximum FICO scores.
+### 📈 Results
+- The majority of FICO Score distribution is in the 500-800 range, with the majority of customers not in default.
+- KMeans provides initial bucket boundaries that are “clustering-based” (centroid values).
+- Log‐Likelihood optimization produces boundaries that take into account the proportion of defaults in each segment—making bucket division more informative for risk‐segmentation.
+- With optimized boundaries, each bucket can be used to determine a credit rating based on the corresponding probability of default.
